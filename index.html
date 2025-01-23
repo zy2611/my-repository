@@ -4,33 +4,45 @@
     <meta charset="UTF-8">
     <meta name= "viewport" content="width=device-width, initial-scale=1.0">
     <title> My Favorite </title>
-    <link rel = "stylessheet" href = "styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <center><h1>My Favorite</h1></center>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="#favorite-artists">Artists</a>
+        <a href="#favorite-games">Games</a>
+        <a href="#favorite-movies">Movies</a>
+        <a href="#favorite-cats">Cats</a>
+        <a href="#favorite-actors">Actors</a>
+    </div>
+
          <!-- Favorite Music Artists Section -->
     <section class="favorite-artists-section">
         <!-- Taylor Swift -->
         <div class="artist-container taylor">
             <div class="image-container left">
-                <img src="taylor.jpg" alt="Taylor Swift" class="rotated-image">
+                <img src="images/Taylor Swift.png" alt="Taylor Swift" class="artist-image taylor">
             </div>
-            <div class="description-container right">
+            <div class="text-container">
                 <h2>Taylor Swift</h2>
-                <p>Taylor Swift is an iconic artist known for her lyrical storytelling and genre-spanning discography. Here are her albums and my favorites from each:</p>
-                <ul>
-                    <li><strong>Fearless</strong>: Love Story, You Belong With Me</li>
-                    <li><strong>1989</strong>: Blank Space, Style</li>
-                    <li><strong>Reputation</strong>: Delicate, Look What You Made Me Do</li>
-                    <li><strong>Folklore</strong>: Exile, Cardigan</li>
-                </ul>
+                <p>Taylor Swift is an iconic artist known for her lyrical storytelling and genre-spanning discography.</p>
+                
+                <!-- Horizontal Scroll Albums for Taylor -->
+                <div class="album-scroll">
+                    <img src="fearless.jpg" alt="Fearless Album" class="album-cover">
+                    <img src="1989.jpg" alt="1989 Album" class="album-cover">
+                    <img src="reputation.jpg" alt="Reputation Album" class="album-cover">
+                    <img src="folklore.jpg" alt="Folklore Album" class="album-cover">
+                    <!-- Add more album covers as needed -->
+                </div>
             </div>
         </div>
 
         <!-- Olivia Rodrigo -->
         <div class="artist-container olivia">
             <div class="image-container right">
-                <img src="olivia.jpg" alt="Olivia Rodrigo" class="rotated-image">
+                <img src="images/Olivia Rodrigo.png" alt="Olivia Rodrigo" class="artist-image olivia">
             </div>
             <div class="description-container left">
                 <h2>Olivia Rodrigo</h2>

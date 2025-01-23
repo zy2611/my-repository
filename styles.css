@@ -1,1 +1,168 @@
+html {
+    scroll-behavior: smooth !important;;
+}
 
+html,
+.favorite-artists-section {
+    background-image: url('images/musicArtistsBackground.png');
+    background-size: cover; /* Ensures the background fits the section */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-attachment: scroll;
+    background-position: center top; /* Centers the image */
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 35px 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #ffcc00;
+}
+
+body {
+    margin: 0;
+    padding-top: 60px; /* Adjust for the navbar height */
+}
+
+section {
+    padding: 100px 20px;
+    margin: 50px 0;
+}
+
+.placeholder {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    background-color: #f4f4f4;
+    border: 1px dashed #ccc;
+}
+
+
+/* Artist Container */
+.artist-container {
+    display: flex;
+    align-items: center; /* Vertically align image and text */
+    justify-content: space-between; /* Ensures even spacing */
+    padding: 0 20px; /* Adds equal spacing on the left and right edges */
+    margin-bottom: 40px; /* Add space between artist sections */
+    gap: 20px; /* Space between image and text */
+}
+
+/* Image Styling
+.image-container {
+    flex: 0; /* Allocate equal space to image
+} */
+
+/* Taylor's container */
+.artist-container.taylor {
+    flex-direction: row; /* Places image and text side by side */
+}
+
+/* Reverse the order for Olivia's section */
+.artist-container.olivia {
+    flex-direction: row-reverse;
+}
+
+.artist-container.taylor img, .artist-container.olivia img {
+    max-width: 600px; /* Set a maximum width for the images */
+    height: auto; /* Ensures the aspect ratio is maintained */
+}
+
+.artist-image.taylor{
+    max-width: 100%; /* Ensures the image does not exceed its container's width */
+    height: auto; /* Maintains the aspect ratio */
+    display: block; /* Removes extra spacing under the image */
+    margin: 0 auto; /* Centers the image horizontally */
+    transform: rotate(-5deg); /* Rotates the image slightly to the left */
+    transition: transform 0.3s ease; /* Smooth animation for interactions */
+}
+
+.artist-image.olivia{
+    max-width: 100%; /* Ensures the image does not exceed its container's width */
+    height: auto; /* Maintains the aspect ratio */
+    display: block; /* Removes extra spacing under the image */
+    margin: 0 auto; /* Centers the image horizontally */
+    transform: rotate(5deg); /* Rotates the image slightly to the left */
+    transition: transform 0.3s ease; /* Smooth animation for interactions */
+}
+
+.artist-image.taylor:hover {
+    transform: rotate(0deg) scale(1.05); /* Straightens the image and adds a slight zoom on hover */
+}
+
+.artist-image.olivia:hover {
+    transform: rotate(0deg) scale(1.05); /* Straightens the image and adds a slight zoom on hover */
+}
+
+/* Album Scroll Section */
+.album-scroll {
+    display: flex;
+    overflow-x: auto; /* Allows horizontal scrolling */
+    gap: 15px; /* Space between album covers */
+    margin-top: 15px;
+}
+
+.album-cover {
+    width: 120px; /* Adjust album cover size */
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.album-cover:hover {
+    transform: scale(1.1); /* Enlarges album covers on hover */
+}
+
+/* Scroll Bar Styles */
+.album-scroll::-webkit-scrollbar {
+    height: 8px; /* Horizontal scrollbar height */
+}
+
+.album-scroll::-webkit-scrollbar-thumb {
+    background: #888; /* Scroll thumb color */
+    border-radius: 10px;
+}
+
+.album-scroll::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker on hover */
+}
+
+.album-scroll::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Scroll track color */
+}
+
+/* Text Styling */
+.text-container {
+    flex: 2; /* Allocate more space to text */
+    font-family: Arial, sans-serif; /* Set a clean font for text */
+    color: #333; /* Dark color for readability */
+}
+
+.text-container h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.text-container p {
+    line-height: 1.6;
+}
