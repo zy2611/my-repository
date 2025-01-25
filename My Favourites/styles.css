@@ -229,8 +229,8 @@ section {
 
 #TTPD {
     font-family: 'TTPDFont', sans-serif; /* Font for the album name */
-    font-size: 12px; /* Adjust size as needed */
-    color: #f1e6e6f5; /* Optional: color for the album name */
+    font-size: 11px; /* Adjust size as needed */
+    color: #e6dddd; /* Optional: color for the album name */
     text-transform: uppercase;
     letter-spacing: 1px;
 }
