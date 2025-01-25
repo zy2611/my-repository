@@ -1,0 +1,438 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding-top: 70px; /* Offset for the fixed navbar */
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 50px 20px;
+}
+
+/*-------------------- Navigation Bar -------------------- */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #4731c4b6;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    z-index: 1000;
+    
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s;
+    font-family: TTPDFont, sans-serif; /* Set a clean font for text */
+    color: #ffffff; /* Dark color for readability */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.navbar a:hover {
+    color: #ffcc00;
+}
+
+/*-------------------- Define custom fonts --------------------*/
+@font-face {
+    font-family: 'FearlessFont';
+    src: url('fonts/CarlaSans.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'SpeakNowFont';
+    src: url('fonts/Mina-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'SpeakNowFont2';
+    src: url('fonts/FilosofiaRoman.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'RedFont';
+    src: url('fonts/KapraNeueProRegularItalicCondensed.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'RedFont2';
+    src: url('fonts/KapraNeueProThinItalic.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'EightyNineFont';
+    src: url('fonts/1989.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'EightyNineFont2';
+    src: url('fonts/TaylorHandwriting.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'reputationFont';
+    src: url('fonts/EngraversOldEnglishRegular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'LoverFont';
+    src: url('fonts/1871DreamerScriptW00Normal.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'LoverFont2';
+    src: url('fonts/Allura-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'folklorevermoreFont';
+    src: url('fonts/IMFePIit28P.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'TTPDFont';
+    src: url('fonts/FeDPrm2.ttf') format('truetype');
+}
+
+#FearlessTitle {
+    font-family: 'FearlessFont', sans-serif;
+    font-size: 25px;
+    color: #774D2D;
+    margin-bottom: -10px;
+    letter-spacing: 3px;
+}
+
+#Fearless {
+    font-family: 'FearlessFont', sans-serif;
+    font-size: 13px;
+    color: #3D2714;
+    text-transform: uppercase;
+}
+
+#SpeakNowTitle {
+    font-family: 'SpeakNowFont', sans-serif; /* Font for the album name */
+    font-size: 30px; /* Adjust size as needed */
+    color: #523960; /* Optional: color for the album name */
+    margin-bottom: -60px;
+    text-transform: capitalize
+}
+
+#SpeakNow {
+    font-family: 'FearlessFont', sans-serif; /* Font for the album name */
+    font-size: 13px; /* Adjust size as needed */
+    color: #2B1E33; /* Optional: color for the album name */
+    text-transform: uppercase
+}
+
+#RedTitle {
+    font-family: 'RedFont', sans-serif;
+    font-size: 50px;
+    color: #960917;
+    margin-bottom: -15px
+}
+
+#Red {
+    font-family: 'RedFont2', sans-serif; /* Font for the album name */
+    font-size: 18px; /* Adjust size as needed */
+    color: #60050E; /* Optional: color for the album name */
+    letter-spacing: 0.5px
+}
+
+#EightyNineTitle {
+    font-family: 'EightyNineFont', sans-serif; /* Font for the album name */
+    font-size: 40px; /* Adjust size as needed */
+    color: #CCCDBF; /* Optional: color for the album name */
+    margin-bottom: -10px;
+}
+
+#EightyNine {
+    font-family: 'EightyNineFont2', sans-serif; /* Font for the album name */
+    font-size: 17px; /* Adjust size as needed */
+    color: #1E1E12 /* Optional: color for the album name */
+}
+
+#reputationTitle {
+    font-family: 'reputationFont', sans-serif; /* Font for the album name */
+    font-size: 40px; /* Adjust size as needed */
+    color: #000000; /* Optional: color for the album name */
+    margin-bottom: -10px;
+}
+
+#reputation {
+    font-family: 'reputationFont', sans-serif; /* Font for the album name */
+    font-size: 20px; /* Adjust size as needed */
+    color: #000000 /* Optional: color for the album name */
+}
+
+#LoverTitle {
+    font-family: 'Loverfont', sans-serif; /* Font for the album name */
+    font-size: 40px; /* Adjust size as needed */
+    color: #C62B6E; /* Optional: color for the album name */
+    margin-bottom: -30px;
+}
+
+#Lover {
+    font-family: 'LoverFont2', sans-serif;/* Font for the album name */
+    font-size: 22px; /* Adjust size as needed */
+    color: #68002B /* Optional: color for the album name */
+}
+
+#folkloreTitle {
+    font-family: 'folklorevermoreFont', sans-serif; /* Font for the album name */
+    font-size: 40px; /* Adjust size as needed */
+    color: #494E48; /* Optional: color for the album name */
+    margin-bottom: -15px;
+}
+
+#folklore {
+    font-family: 'folklorevermoreFont'; /* Font for the album name */
+    font-size: 17px; /* Adjust size as needed */
+    color: #2d302c /* Optional: color for the album name */
+}
+
+#evermoreTitle {
+    font-family: 'folklorevermoreFont', sans-serif; /* Font for the album name */
+    font-size: 40px; /* Adjust size as needed */
+    color: #7C540C; /* Optional: color for the album name */
+    margin-bottom: -15px;
+}
+
+#evermore {
+    font-family: 'folklorevermoreFont', sans-serif; /* Font for the album name */
+    font-size: 20px; /* Adjust size as needed */
+    color: #422e09 /* Optional: color for the album name */
+}
+
+#Midnights {
+    font-family: 'Helvetica', sans-serif; /* Font for the album name */
+    font-size: 18px; /* Adjust size as needed */
+    color: #1D3882 /* Optional: color for the album name */
+}
+
+#TTPDTitle {
+    font-family: 'TTPDFont', sans-serif; /* Font for the album name */
+    font-size: 18px; /* Adjust size as needed */
+    color: #ffffff; /* Optional: color for the album name */
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+#TTPD {
+    font-family: 'TTPDFont', sans-serif; /* Font for the album name */
+    font-size: 12px; /* Adjust size as needed */
+    color: #f1e6e6f5; /* Optional: color for the album name */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/*-------------------- Favorite Artists Section --------------------*/
+.favorite-artists-section {
+    background-image: url('images/Music Artists/musicArtistsBackground.png');
+    background-size: cover; /* Ensures the background fits the section */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-attachment: scroll;
+    background-position: center top; /* Centers the image */
+}
+
+/* Artist Container */
+.artist-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Taylor's section */
+.artist-container.taylor {
+    flex-direction: column;
+}
+
+/* Olivia's section */
+.artist-container.olivia {
+    flex-direction: row-reverse;
+}
+
+/*-------------------- Image Styling --------------------*/
+.image-container {
+    flex: 1;
+    text-align: center;
+}
+
+.artist-container.taylor img {
+    max-width: 500px; /* Set a maximum width for the images */
+    height: auto; /* Ensures the aspect ratio is maintained */
+    
+}
+
+.artist-image.taylor{
+    max-width: 100%; /* Ensures the image does not exceed its container's width */
+    height: auto; /* Maintains the aspect ratio */
+    display: block; /* Removes extra spacing under the image */
+    margin: 0 auto; /* Centers the image horizontally */
+    transform: rotate(-2.5deg); /* Rotates the image slightly to the left */
+    transition: transform 0.3s ease; /* Smooth animation for interactions */
+}
+
+.artist-image.taylor:hover {
+    transform: rotate(0deg) scale(1.10); /* Straightens the image and adds a slight zoom on hover */
+}
+
+/*-------------------- Albums Section --------------------*/
+.album-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.album-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.album {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 100%;
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.album.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.album-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    width: 100%;
+    transition: transform 0.5s ease;
+    transform: translateX(30px);
+}
+
+.album-image {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: visible;
+    transform: rotate(-2.5deg);
+    transition: transform 0.5s ease;
+}
+
+.album-image:hover {
+    transform: rotate(0deg) scale(1.10);
+}
+
+.album-cover {
+    width: 100%;
+    height: auto;
+    display: block;
+    z-index: 2;
+    position: relative;
+}
+
+.album-vinyl {
+    position: absolute;
+    top: 0%;
+    left: -33%;
+    width: 149%;
+    height: auto;
+    transform: scale(0) translateX(-50px);
+    z-index: 1;
+    
+    transform: translateX(-50px);
+    transition: transform 0.6s ease;
+}
+
+.album-image:hover .album-vinyl {
+    transform: scale(1) translateX(95px);
+}
+
+.album-description {
+    max-width: 675px;
+    text-align: left;
+    z-index: 0;
+    position: relative;
+    margin-left: 20px;
+    transform: translateX(0);
+    transition: margin-left 0.5s ease-in-out; /* Smooth adjustment when hovered */
+}
+
+/* Adjust the text when hovering */
+.album-image:hover ~ .album-description {
+    margin-left: 160px; /* Move the description to the right */
+}
+
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    width: 30px;
+    height: 200px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.scroll-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Left arrow position */
+.scroll-btn.left {
+    left: -30px; /* Positions the left button */
+    border-radius: 50px 5px 5px 50px;
+}
+
+/* Right arrow position */
+.scroll-btn.right {
+    right: -30px; /* Positions the right button */
+    border-radius: 5px 50px 50px 5px;
+}
+
+/*-------------------- Text Styling --------------------*/
+#TaylorName{
+    font-family: 'EightyNineFont2', sans-serif; /* Font for the album name */
+    font-size: 60px; /* Adjust size as needed */
+    color: #190864; /* Optional: color for the album name */
+    text-align: center;
+}
+
+.text-container {
+    flex: 2; /* Allocate more space to text */
+    font-family: 'EightyNineFont2', sans-serif; /* Set a clean font for text */
+    font-size: 25px; /* Adjust size as needed */
+    color: #272727; /* Optional: color for the album name */
+}
+
+.text-container h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.text-container p {
+    line-height: 1.6;
+}
